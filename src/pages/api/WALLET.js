@@ -8,7 +8,7 @@ export default async function handler(req, res) {
     }
 
     // Use the appropriate Ethereum provider, for example, Infura
-    const provider = new ethers.providers.JsonRpcProvider('https://scroll-sepolia.blockpi.network/v1/rpc/public');
+    const provider = new ethers.providers.JsonRpcProvider('https://sepolia.mode.network/');
 
     // Use a signer provider
     const signer = new ethers.Wallet(process.env.NEXT_PUBLIC_PUB_KEY, provider);
